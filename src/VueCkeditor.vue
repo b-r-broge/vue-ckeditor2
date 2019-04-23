@@ -7,6 +7,7 @@
       :types="types"
       :config="config"
       :disabled="readOnlyMode"
+      :maxlength="maxLength"
     >
     </textarea>
   </div>
@@ -43,6 +44,10 @@ export default {
     readOnlyMode: {
       type: Boolean,
       default: () => false
+    },
+    maxLength: {
+      type: Number,
+      default: -1
     }
   },
   data() {
